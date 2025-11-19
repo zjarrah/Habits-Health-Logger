@@ -91,7 +91,7 @@ class User extends Model {
     }
 
     public static function insertUser(mysqli $connection, string $email, string $password, int $isAdmin, string $name,
-                                        string $dob, int $phoneNumber, string $createdAt, string $lastUpdated){
+                                        string $dob, string $phoneNumber, string $createdAt, string $lastUpdated){
         $sql = sprintf("INSERT INTO %s (email, password, is_admin, name, dob, phone_number, created_at, last_updated) VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
             self::$table);
 
