@@ -75,9 +75,9 @@ class UserController {
             $email = $data["email"];
             $password = hash('sha256', $data["password"]);
             $isAdmin = 0;
-            $name = null;
-            $dob = null;
-            $phoneNumber = null;
+            $name = '';
+            $dob = '';
+            $phoneNumber = '';
             $createdAt = date('Y-m-d');
             $lastUpdated = date('Y-m-d');
 
